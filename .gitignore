@@ -1,0 +1,10 @@
+# phpstorm project files
+.idea
+
+# composer vendor dir
+/vendor
+
+# composer 
+composer.phar
+
+.phalcon
