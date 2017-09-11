@@ -45,6 +45,10 @@ class StreetsController extends ControllerBase
             return;
         }
 
+
+        /**
+         * Кэширование, вроде работает, но как им пользоваться я до конца не разобался.
+         */
         $frontCache = new Phalcon\Cache\Frontend\Data(array(
             "lifetime" => 172800
         ));
