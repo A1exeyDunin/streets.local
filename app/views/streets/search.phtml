@@ -40,7 +40,7 @@ use Phalcon\DI;
             <tr>
                 <td><?php echo $street->id ?></td>
                 <td><?php echo $street->title ?></td>
-                <td><?php echo DI::getDefault()->get('total')->getTotal($street->id); ?></td>
+                <td><?php echo DI::getDefault()->get('total')->getTotal($street->id); ?></td> <!-- Получаем данные из сервиса Total.php -->
                 <td><?php echo $this->tag->linkTo(["streets/edit/" . $street->id, "Edit"]); ?></td>
                 <td><?php echo $this->tag->linkTo(["streets/delete/" . $street->id, "Delete"]); ?></td>
             </tr>
